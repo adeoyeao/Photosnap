@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./scripts/index.js" type="module" defer></script>
+    <title>Photosnap - <%= title %></title>
+  </head>
+
+  <body>
+    <header>
+      <a href="/" class="logo"></a>
+      <ul class="top-navbar">
+        <li><a href="/stories">Stories</a></li>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+      </ul>
+      <button class="sq-btn invite-btn black">Get an invite</button>
+      <div class="menu-btn"></div>
+      <div class="dropdown">
+        <ul class="dropdown-navbar">
+          <li><a href="/stories">Stories</a></li>
+          <li><a href="/features">Features</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+        </ul>
+        <button class="dropdown-cta invite-btn">Get an invite</button>
+      </div>
+    </header>
+  </body>
+</html>

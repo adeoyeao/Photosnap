@@ -1,0 +1,32 @@
+<%- include("header") -%>
+
+<section id="stories-hero" class="black">
+      <article id="featured-story">
+            <h4>Last Month's featured story</h4>
+            <h1>Hazy full moon of Appalachia</h1>
+            <div class="horizontal">
+            <p>March 2nd 2020</p>
+            <h4>by John Appleseed</h4>
+            </div>
+            <p>
+                  The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains,"
+                  especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.
+            </p>
+      </article>
+      <div id="stories-image" class="img-large"></div>
+</section>
+
+<section id="all-stories">
+
+<% storiesData.forEach(story => { %>
+      <div class="img-small read-story" id="read-story-<%= story.id %>">
+      <h4><%= story.date %></h4>
+      <h2><%= story.name %></h2>
+      <h4>by <%= story.author %></h4>
+      <div class="arrow-btn read-btn" data-url="<%= story.article %>">Read Story<div class="arrow"></div></div>
+      </div>
+<% }) %>
+
+</section>
+
+<%- include("footer") -%>

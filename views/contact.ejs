@@ -1,0 +1,13 @@
+<%- include("header") %>
+
+<section class="contact-response">
+<h2 class="large-font"><%= header %></h1>
+<p><%= message %></p>
+<% if (result == "success") { %>
+      <a href="/" class="sq-btn return-btn">Return to Home</a>
+<% } else { %>
+      <div class="invite-btn sq-btn return-btn">Try Again</div>
+<% } %>
+</section>
+
+<%- include("footer") %>
