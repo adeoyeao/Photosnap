@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
   const jsonData = JSON.stringify(data);
 
   const listID = `8c47d02b74`;
-  const APIKey = `8b7c07e152f2c6ca5fc27c9845a67154-us17`;
+  const APIKey = MAILCHIMP_API;
   const user = `adeoyeao`;
   const url = `https://us17.api.mailchimp.com/3.0/lists/${listID}`;
   const options = {

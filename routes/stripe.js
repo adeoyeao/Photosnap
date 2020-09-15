@@ -2,9 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bodyParser = require("body-parser");
 
-const stripe = require("stripe")(
-  "sk_test_51HRa1uFOJvkphWsvtQl4r2tYXknO0kd3sZLA6VcCjySSoX6AXnKDtDHtnikz686NMNGlZH5iW5b8hYdUW6pOsC0f00Ex39asUK"
-);
+const stripe = require("stripe")(SECRET_STRIPE);
 
 router.post("/basic-month", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
